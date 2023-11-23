@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #bbd0ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  position: relative;
+  
+}
+
+.container {
+  width: 590px;
+  height: 100vh;
+  margin: 100px auto;
+}
+
+.header {
+  padding: 15px;
+  color: #86a789;
+  background-color: #9486d4;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+  /* display: flex;
+    justify-content: space-between; */
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.title i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.description {
+  font-size: 13px;
+}
+
+.card {
+  background-color: #715cb5;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input-control {
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  color: #86a789;
+  font-size: 13px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #86a789;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-task {
+  color: rgb(56, 169, 56);
+  font-size: 20px;
+}
+
+.delete-task {
+  color: rgb(158, 45, 45);
+  font-size: 20px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.sec {
+   background-color: #bbd0ff;
+}
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar h1 {
+  color: #000;
+  font-family: "Jacques Francois";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar nav {
+    color: #000;
+font-family: Jacques Francois;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.navbar nav {
+    display: inline-block;
+    /* margin: 0 20px; */
+    position: relative;
+    text-decoration: none;
+    color: rgb(105, 171, 228);
+    /* text-transform: uppercase; */
+}
+
+.navbar nav::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #8d7bde;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar nav:hover::after {
+    width: 100%;
+}
+
+.hero {
+ display: flex;
+ /* justify-content: center;
+ text-align: center; */
+ align-items: center;
+ margin-left: 100px;
+ /* margin-top: 3px; */
+}
+.kiri h1 {
+color: #000;
+font-family: Jacques Francois;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 10px;
+}
+
+.kiri h3 {
+color: #000;
+font-family: Jacques Francois;
+font-size: 34px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.kanan img {
+    width: 478px;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    margin-right: 27px;
+    margin-top: 20px;
+}
+
+span {
+ color: #ffffff;
+ /* background-color: #6b9fe4; */
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        /* gap: 90px; */
+        font-size: 10px;
+        padding: 30px;
+        margin-bottom: 100px;
+    }
+
+    .navbar nav {
+        padding-left: 70px;
+    }
+
+    .kanan img {
+        width: 600px;
+        margin-right: 70px;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .container {
+        margin-left: 100px;
+    }
+}
